@@ -1,0 +1,6 @@
+module Pods_Effervescent {
+  umbrella header "Pods-Effervescent-umbrella.h"
+
+  export *
+  module * { export * }
+}
