@@ -49,8 +49,4 @@ struct GeneralSettings {
         /// https://i.4cdn.org/a/1636286583580.png
         static var image = "https://i.4cdn.org/%@/%@"
     }
-    
-    struct characters {
-        let chars: [Character] = ["a", "e", "i"]
-    }
 }

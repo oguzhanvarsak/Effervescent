@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
     var boardsList: [Catalog]?
     var board: String?
     var boardTitle: String?
+    @IBOutlet weak var boardsButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -72,8 +72,4 @@ extension String {
         
         return replacedString!
     }
-    
-    func stringByRemovingAll(characters: [Character]) -> String {
-            return String(self.characters.filter({ !characters.contains($0) }))
-        }
 }

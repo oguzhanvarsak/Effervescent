@@ -54,12 +54,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="Board" largeTitleDisplayMode="always" id="NTq-NM-Qea">
                         <barButtonItem key="rightBarButtonItem" image="list.bullet.indent" catalog="system" id="YKy-jF-FRx">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="boards"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="boardsButtonAct:" destination="BYZ-38-t0r" id="gye-J9-pUj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="boardsButton" destination="YKy-jF-FRx" id="nQV-3p-gd5"/>
                         <outlet property="boardsCollectionView" destination="BB3-QC-ZtV" id="RMe-Ez-yaz"/>
                         <segue destination="ioT-Bd-X7c" kind="popoverPresentation" identifier="boards" popoverAnchorView="8bC-Xf-vdC" id="Evu-VG-jar">
                             <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -81,6 +85,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7bm-Xq-SAK">
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="tableView"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="FOz-5p-MmP" id="nBT-Oz-jRV"/>
                                     <outlet property="delegate" destination="FOz-5p-MmP" id="n5s-xh-1rW"/>
